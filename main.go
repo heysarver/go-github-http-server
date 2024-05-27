@@ -42,7 +42,7 @@ func main() {
 	router := gin.Default()
 
 	// Serve static files from the repository folder
-	path, err := filepath.Abs(config.Subfolder)
+	path, err := filepath.Abs(config.Dest)
 	if err != nil {
 		log.Fatalf("Invalid subfolder path: %v", err)
 	}
